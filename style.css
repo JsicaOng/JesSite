@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     padding: 20px;
     color: #aa8976;
@@ -53,4 +54,48 @@ table{
     border-style: groove;
     border-width: 1px;
     width: 40%;
+=======
+body{
+    padding: 20px;
+    color: #aa8976;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: larger;
+}
+
+table{
+    width: 100%;
+}
+
+.title{
+    font-family: 'Sriracha', cursive;
+}
+
+
+.second_table{
+    background-color: #f0e2d0 ;
+}
+
+.third_table{
+    background-color: #f0e2d0 ;
+}
+
+.greeting{
+    color: white;
+    font-family: 'Sriracha', cursive;
+    text-align:center;
+    font-size: xxl;
+    padding-top: 5%;
+}
+
+.form{
+    color: white;
+    width: 80%;
+    margin: auto;
+    font-family: serif;
+    font-size: larger;
+}
+
+.btn-primary{
+    margin-left: 90%;
+>>>>>>> c016e94d8cd4e6226c4425ae41c044ec051a4c15
 }
