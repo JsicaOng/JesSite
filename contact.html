@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 </head>
 
-<body style="background: deepskyblue;">
+<body style="background: skyblue;">
 <ul class="nav nav-pills nav-fill">
   <li class="nav-item">
     <a class="nav-link active" href="#">Main</a>
@@ -25,25 +25,34 @@
   </li>
 </ul>
 
-<h1 class="greeting">Hello there! <i class="fas fa-hand-sparkles"></i> What is your name?</h1>
+<h1 class="greeting">Hello there! <i class="fas fa-hand-sparkles"></i><br> We would like to contact you in person!</h1>
 <br>
 <form class="form" >
   <div class="form-group">
     <label for="exampleInputEmail1">First Name</label>
-    <input type="text" class="form-control" id="f_name" placeholder="First Name">
+    <input type="text" class="form-control" id="f_name" placeholder="First Name" onfocus="this.placeholder = ''"
+    onblur="this.placeholder='First Name'">
   </div>
     <div class="form-group">
         <label for="exampleInputEmail1">Last Name</label>
-        <input type="text" class="form-control" id="l_name" placeholder="Last Name">
+        <input type="text" class="form-control" id="l_name" placeholder="Last Name" onfocus="this.placeholder = ''"
+        onblur="this.placeholder='Last Name'">
     </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+           placeholder="Enter email" onfocus="this.placeholder = ''" onblur="this.placeholder='Enter email'">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+    <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"
+    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" />
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"
+           onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" />
   </div>
   <div class="form-check">
     <input  style="cursor: pointer;" type="checkbox" class="form-check-input" id="exampleCheck1">
