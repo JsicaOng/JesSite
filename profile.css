@@ -1,0 +1,301 @@
+body{
+    width:100%;
+    height:100vh;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+nav{
+    background-color: #ddf3f5;
+    height: 25vh;
+    font-family: 'Montserrat', cursive !important;
+}
+
+h1{
+    line-height: 2 !important;
+}
+
+footer{
+    height: 20vh;
+    background-color: #ffa45b;
+    text-align: center;
+}
+
+.navbar-brand{
+    position: absolute;
+    padding-left: 65px;
+    z-index: 1;
+}
+
+#mini_me{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.navbar-collapse{
+    padding-left: 50%;
+    text-align: right;
+    position: absolute;
+}
+
+.navbar-toggler{
+    margin-left:auto;
+    border: 0px !important;
+    margin-right: 11% !important;
+    position: absolute;
+    right: -65px;
+}
+
+.navbar-collapse{
+    padding-left: 75vh;
+}
+
+.start-session{
+    height:75vh;
+    background: linear-gradient(to top, #36D1DC, #ddf3f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.title{
+    background-color: #ddf3f5;
+    height: 10vh;
+    padding-left: 45vh;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+.dolphin{
+    width: 50vh;
+    position: absolute;
+    top: 100vh;
+    right :15vh;
+    overflow: hidden;
+    animation-name: mydolphin;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    transform: rotateZ(-40deg);
+}
+
+
+@keyframes mydolphin{
+    0%{
+        right: 90%;
+        top:60vh;
+        transform: scaleX(-1);
+    }
+    30%{
+        right: 60%;
+        top:50vh;
+        transform: scaleX(-1);
+    }
+    45%{
+        transform: rotateZ(360deg);
+    }
+    60%{
+        transform: rotateZ(-0deg);
+    }
+
+    70%{
+        top: 80vh;
+        right: 50%;
+        transform: scaleX(-1);
+    }
+
+    100%{
+        top: 110vh;
+        right: 0%;
+        transform: scaleX(-1);
+    }
+}
+
+.fish{
+    width: 15vh;
+    position: absolute;
+    top: 335vh;
+    left :73vh;
+    overflow: hidden;
+    animation-name: myfish;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    transform: scaleX(-1);
+}
+
+
+@keyframes myfish{
+    0%{
+        left: 80%;
+        top:300vh;
+        transform: scaleX(1);
+    }
+    10%{
+        left: 75%;
+        top: 310vh;
+    }
+    30%{
+        left: 70%;
+        top:300vh;
+        transform: rotateZ(20deg);
+    }
+    40%{
+        left: 65%;
+        top:320vh;
+        transform: rotateZ(-20deg);
+    }
+    50%{
+        left:60%;
+        top:310vh
+        transform: rotateZ(20deg);
+    }
+    60%{
+        left: 50%;
+        top: 300vh
+        transform: rotateZ(-20deg);
+    }
+    80%{
+        top: 310vh;
+        left: 40%;
+        transform: rotateZ(-40deg);
+    }
+    100%{
+    transform: scaleX(1);
+    }
+}
+
+.start_base{
+    bottom: -11vh;
+    position: absolute;
+    height: 84vh;
+    right: 0;
+}
+
+.center-session{
+    height:300vh;
+    background: linear-gradient(to top, #fdbb2d, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.top_session{
+    height: 100vh;
+}
+
+.beach_pic{
+    width: 120vh;
+    float: left;
+    padding-top: 15vh;
+    padding-left: 20vh;
+}
+
+.prog_text{
+    position: relative;
+    float: right;
+    top: 40vh;
+    width: 85vh;
+    padding-right: 35vh;
+}
+
+#mycarousel{
+    height: 100vh;
+}
+
+.carousel-item{
+    text-overflow: ellipsis;
+    width: 80%;
+}
+
+.carousel-text{
+    text-align: center;
+    padding-top: 10%;
+}
+
+.bottom_session{
+    height: 100vh;
+    padding-top: 25vh;
+}
+
+.surf_text{
+    width: 115vh;
+    padding-left: 35vh;
+    position: relative;
+    top: 30vh;
+    float: left;
+}
+
+.beach_girl{
+    width: 100vh;
+    float: right;
+    position: relative;
+    padding-right: 40vh;
+    padding-top: 10vh;
+}
+
+.end-session{
+    height:80vh;
+    background: linear-gradient(to top, #ffa45b, #fdbb2d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.end-text{
+    text-align: center;
+    padding: 25vh;
+}
+
+.footer-icon {
+    padding-top: 5vh;
+}
+
+.fab{
+    margin-left: 10vh;
+}
+
+@media only screen and (max-width: 1263px){
+    .navbar-collapse {
+        padding-left: 50%;
+        text-align: right;
+        position: absolute;
+        top: 15vh;
+        z-index: 2;
+        right: 5vh;
+    }
+    .title{
+        padding-left: 10vh;
+    }
+    .start_base{
+        height: 70vh;
+    }
+    .dolphin{
+        right: 0vh;
+    }
+    .beach_pic{
+        float: left;
+        padding-top: 10vh;
+        width: 85vh;
+    }
+    .prog_text {
+        top: 0vh;
+    }
+    .carousel-inner {
+        width: 80%;
+        margin-left: 10vh;
+    }
+    #mycarousel{
+        padding-top: 15vh;
+        height: 200vh;
+    }
+    .carousel-item{
+        left:0;
+        right:0;
+    }
+    .carousel-text{
+        padding:0;
+        margin: 10vh;
+    }
+    .center-session{
+        height: 400vh;
+    }
+    .beach-girl{
+        padding-top: 0vh;
+        width: 75vh;
+    }
+    .surf_text{
+        top:0vh;
+    }
+
+}
+
