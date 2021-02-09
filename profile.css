@@ -10,6 +10,23 @@ nav{
     font-family: 'Montserrat', cursive !important;
 }
 
+.myloader {
+    position:absolute;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 20vh;
+    height: 20vh;
+    animation: spin 2s linear infinite;
+    top: 40vh;
+    left: 100vh;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 h1{
     line-height: 2 !important;
 }
@@ -296,6 +313,49 @@ footer{
     .surf_text{
         top:0vh;
     }
+
+}
+
+@media only screen and (max-width: 600px){
+    .start_base {
+    padding-top: 7vh;
+    }
+    .dolphin {
+    width: 30vh;
+    }
+    .beach_pic {
+    width: 65vh;
+    }
+    .prog_text {
+    padding-left: 20vh;
+    padding-right: 20vh;
+    }
+    .center-session {
+    height: 380vh;
+    }
+    #mycarousel {
+     padding-top: 10vh;
+     height: 0vh;
+     }
+     .beach_girl {
+    width: 80vh;
+    position: relative;
+    padding-right: 30vh;
+    padding-top: 50vh;
+    }
+    .surf_text {
+        top: 5vh;
+        width: 60vh;
+        padding-left: 21vh;
+        position: relative;
+    }
+    #surf{
+        padding-top: 115vh;
+    }
+    .end-text {
+    text-align: center;
+    padding: 15vh;
+}
 
 }
 
