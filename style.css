@@ -57,9 +57,13 @@ table {
   border-width: 1px;
   width: 40%;
 
-@media only screen and (min-width: 600px){
-    body{
-        color: #BADA55;
+@media only screen and (max-width: 500px), screen and (min-width: 0px){
+    .second_table {
+      background-color: #BADA55 !important;
+    }
+
+    .third_table {
+      background-color: #BADA55 !important;
     }
 
 }

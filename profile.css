@@ -57,8 +57,7 @@ footer{
 .navbar-toggler{
     margin-left:auto;
     border: 0px !important;
-    margin-right: 11% !important;
-    position: absolute;
+    margin-right: 11% ;
     right: -65px;
 }
 
@@ -138,37 +137,23 @@ footer{
 
 @keyframes myfish{
     0%{
-        left: 80%;
-        top:300vh;
         transform: scaleX(1);
     }
     10%{
-        left: 75%;
-        top: 310vh;
     }
     30%{
-        left: 70%;
-        top:300vh;
         transform: rotateZ(20deg);
     }
     40%{
-        left: 65%;
-        top:320vh;
         transform: rotateZ(-20deg);
     }
     50%{
-        left:60%;
-        top:310vh
         transform: rotateZ(20deg);
     }
     60%{
-        left: 50%;
-        top: 300vh
         transform: rotateZ(-20deg);
     }
     80%{
-        top: 310vh;
-        left: 40%;
         transform: rotateZ(-40deg);
     }
     100%{
@@ -185,6 +170,7 @@ footer{
 
 .center-session{
     height:300vh;
+    width: auto;
     background: linear-gradient(to top, #fdbb2d, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -203,23 +189,12 @@ footer{
 .prog_text{
     position: relative;
     float: right;
-    top: 40vh;
     width: 85vh;
     padding-right: 35vh;
 }
 
-#mycarousel{
-    height: 100vh;
-}
-
-.carousel-item{
-    text-overflow: ellipsis;
-    width: 80%;
-}
-
 .carousel-text{
-    text-align: center;
-    padding-top: 10%;
+    padding-top: 15%;
 }
 
 .bottom_session{
@@ -228,7 +203,7 @@ footer{
 }
 
 .surf_text{
-    width: 115vh;
+    width: 100vh;
     padding-left: 35vh;
     position: relative;
     top: 30vh;
@@ -236,11 +211,10 @@ footer{
 }
 
 .beach_girl{
-    width: 100vh;
+    width: 75vh;
     float: right;
     position: relative;
     padding-right: 40vh;
-    padding-top: 10vh;
 }
 
 .end-session{
@@ -261,6 +235,12 @@ footer{
     margin-left: 10vh;
 }
 
+@media only screen and (min-width: 1400px){
+    .prog_text{
+        padding-top: 35vh;
+    }
+}
+
 @media only screen and (max-width: 1263px){
     .navbar-collapse {
         padding-left: 50%;
@@ -278,84 +258,120 @@ footer{
     }
     .dolphin{
         right: 0vh;
+        width: 30%;
     }
     .beach_pic{
         float: left;
-        padding-top: 10vh;
+        padding-top: 20vh;
         width: 85vh;
     }
     .prog_text {
         top: 0vh;
     }
-    .carousel-inner {
-        width: 80%;
-        margin-left: 10vh;
-    }
-    #mycarousel{
-        padding-top: 15vh;
-        height: 200vh;
-    }
-    .carousel-item{
-        left:0;
-        right:0;
-    }
-    .carousel-text{
-        padding:0;
-        margin: 10vh;
-    }
+
     .center-session{
-        height: 400vh;
+        height: 300vh;
+        width: auto;
+
     }
     .beach-girl{
         padding-top: 0vh;
         width: 75vh;
+        padding-left:0;
+        padding-right:0;
     }
     .surf_text{
-        top:0vh;
+        top: 0vh;
+        padding-left: 30vh;
+        padding-right: 15vh;
     }
 
 }
 
 @media only screen and (max-width: 600px){
     .start_base {
-    padding-top: 7vh;
+        padding-top: 7vh;
     }
     .dolphin {
-    width: 30vh;
+        width: 30vh;
     }
     .beach_pic {
-    width: 65vh;
+        width: 50vh;
+        padding-top: 30vh;
     }
     .prog_text {
-    padding-left: 20vh;
-    padding-right: 20vh;
+        float:none;
+        padding-left:10vh;
     }
     .center-session {
-    height: 380vh;
+        height: 370vh;
+        width: auto;
     }
-    #mycarousel {
-     padding-top: 10vh;
-     height: 0vh;
-     }
-     .beach_girl {
-    width: 80vh;
-    position: relative;
-    padding-right: 30vh;
-    padding-top: 50vh;
+    .beach_girl {
+        padding-right:30vh;
+        float: none;
+        position: relative;
     }
     .surf_text {
         top: 5vh;
         width: 60vh;
-        padding-left: 21vh;
         position: relative;
+        float: none;
+        padding-left: 15vh;
     }
-    #surf{
-        padding-top: 115vh;
+    .fish{
+        position: initial;
+        left:0vh;
     }
     .end-text {
-    text-align: center;
-    padding: 15vh;
+        height: auto;
+        text-align: center;
+        padding: 5vh;
+    }
+    .carousel-item{
+        right:0vh !important;
+        left: 0vh !important;
+    }
+    .carousel-text{
+        padding-right: 5vh !important;
+        padding-left: 5vh !important;
+    }
 }
 
+
+@media only screen (max-width: 400px){
+    .navbar-toggler{
+        position: initial;
+    }
+    .dolphin{
+        top: -5vh;
+    }
+    .mycarousel{
+        padding-top: 25vh;
+    }
+    .beach_pic {
+        padding-left:0vh;
+    }
+    .prog_text {
+        float:none;
+        padding-left: 0vh;
+        padding-right: 0vh;
+    }
+    .surf_text {
+        width:auto;
+        padding-left:0vh;
+    }
+    .end-text{
+        height:auto;
+    }
+    .carousel-text{
+        padding-right: 0vh;
+        padding-left: 0vh;
+    }
+    .beach_girl{
+        float:none;
+    }
 }
+
+
 
