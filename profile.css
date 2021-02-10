@@ -218,13 +218,13 @@ footer{
 }
 
 .end-session{
-    height:80vh;
     background: linear-gradient(to top, #ffa45b, #fdbb2d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .end-text{
     text-align: center;
     padding: 25vh;
+    padding-top: 65vh;
 }
 
 .footer-icon {
@@ -240,8 +240,13 @@ footer{
         padding-top: 35vh;
     }
 }
+@media only screen and (max-width:1400px) and screen (min-width: 1000px){
+    .prog_text {
+    top: 50vh;
+    }
+}
 
-@media only screen and (max-width: 1263px){
+@media only screen and (max-width: 1000px){
     .navbar-collapse {
         padding-left: 50%;
         text-align: right;
@@ -323,11 +328,6 @@ footer{
         position: initial;
         left:0vh;
     }
-    .end-text {
-        height: auto;
-        text-align: center;
-        padding: 5vh;
-    }
     .carousel-item{
         right:0vh !important;
         left: 0vh !important;
@@ -360,9 +360,6 @@ footer{
     .surf_text {
         width:auto;
         padding-left:0vh;
-    }
-    .end-text{
-        height:auto;
     }
     .carousel-text{
         padding-right: 0vh;
