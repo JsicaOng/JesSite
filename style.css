@@ -41,6 +41,11 @@ table {
   padding-top: 5%;
 }
 
+form {
+   margin-left: 15vh;
+   margin-right: 15vh;
+}
+
 .btn-primary {
   margin-left: 90%;
 }
