@@ -190,7 +190,8 @@ footer{
     position: relative;
     float: right;
     width: 85vh;
-    padding-right: 35vh;
+    padding-right: 40vh;
+    padding-top: 40vh;
 }
 
 .carousel-text{
