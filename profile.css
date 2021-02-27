@@ -38,7 +38,6 @@ footer{
 }
 
 .navbar-brand{
-    position: absolute;
     padding-left: 65px;
     z-index: 1;
 }
@@ -49,9 +48,10 @@ footer{
     border-radius: 50%;
 }
 .navbar-collapse{
-    padding-left: 50%;
-    text-align: right;
-    position: absolute;
+    position: fixed;
+    margin: 35vh 0vh 0vh 5vh;
+    background: radial-gradient(white, transparent);
+    z-index: 1;
 }
 
 .navbar-toggler{
@@ -59,10 +59,8 @@ footer{
     border: 0px !important;
     margin-right: 11% ;
     right: -65px;
-}
-
-.navbar-collapse{
-    padding-left: 75vh;
+    position: fixed !important;
+    z-index: 1;
 }
 
 .start-session{
@@ -81,13 +79,13 @@ footer{
 .dolphin{
     width: 50vh;
     position: absolute;
-    top: 100vh;
-    right :15vh;
+    top: 400vh;
+    right :150vh;
     overflow: hidden;
     animation-name: mydolphin;
     animation-duration: 4s;
     animation-iteration-count: 1;
-    transform: rotateZ(-40deg);
+    transform: rotateZ(-30deg);
 }
 
 
@@ -117,7 +115,7 @@ footer{
 
     100%{
         top: 110vh;
-        right: 0%;
+        right: -10%;
         transform: scaleX(-1);
     }
 }
@@ -162,7 +160,7 @@ footer{
 }
 
 .start_base{
-    bottom: -11vh;
+    bottom: -30vh;
     position: absolute;
     height: 84vh;
     right: 0;
@@ -191,7 +189,6 @@ footer{
     float: right;
     width: 85vh;
     padding-right: 40vh;
-    padding-top: 40vh;
 }
 
 .carousel-text{
@@ -225,7 +222,6 @@ footer{
 .end-text{
     text-align: center;
     padding: 25vh;
-    padding-top: 65vh;
 }
 
 .footer-icon {
@@ -238,7 +234,7 @@ footer{
 
 @media only screen and (min-width: 1400px){
     .prog_text{
-        padding-top: 35vh;
+
     }
 }
 @media only screen and (max-width:1400px) and screen (min-width: 1000px){
@@ -247,14 +243,13 @@ footer{
     }
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (min-width: 1050px){
     .navbar-collapse {
-        padding-left: 50%;
+        padding-left: 60%;
+        padding-bottom: 20vh;
         text-align: right;
         position: absolute;
-        top: 15vh;
-        z-index: 2;
-        right: 5vh;
+        background:none;
     }
     .title{
         padding-left: 10vh;
@@ -263,7 +258,7 @@ footer{
         height: 70vh;
     }
     .dolphin{
-        right: 0vh;
+        right: 25vh;
         width: 30%;
     }
     .beach_pic{
@@ -272,7 +267,7 @@ footer{
         width: 85vh;
     }
     .prog_text {
-        top: 0vh;
+        padding-top: 50vh;
     }
 
     .center-session{
@@ -294,11 +289,30 @@ footer{
 
 }
 
+@media only screen and (max-width: 1050px){
+    .end-text{
+        padding-top: 65vh;
+    }
+    .dolphin {
+        display:none;
+    }
+}
+@media only screen and (max-width: 800px){
+    .surf_text {
+        width: 100vh;
+        padding-left: 35vh;
+        position: inherit;
+        top: 30vh;
+        float: left;
+        }
+}
+
 @media only screen and (max-width: 600px){
     .start_base {
         padding-top: 7vh;
     }
     .dolphin {
+        right: 25vh;
         width: 30vh;
     }
     .beach_pic {
@@ -337,13 +351,13 @@ footer{
         padding-right: 5vh !important;
         padding-left: 5vh !important;
     }
+    .end-text{
+        padding-top: 0vh;
+    }
 }
 
 
 @media only screen (max-width: 400px){
-    .navbar-toggler{
-        position: initial;
-    }
     .dolphin{
         top: -5vh;
     }
