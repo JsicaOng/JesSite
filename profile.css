@@ -43,13 +43,13 @@ footer{
 }
 
 #mini_me{
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
 }
 .navbar-collapse{
     position: fixed;
-    margin: 35vh 0vh 0vh 5vh;
+    margin: -3vh 0vh 0vh 90vh;
     background: radial-gradient(white, transparent);
     z-index: 1;
 }
@@ -245,8 +245,7 @@ footer{
 
 @media only screen and (min-width: 1050px){
     .navbar-collapse {
-        padding-left: 60%;
-        padding-bottom: 20vh;
+
         text-align: right;
         position: absolute;
         background:none;
@@ -293,8 +292,11 @@ footer{
     .end-text{
         padding-top: 65vh;
     }
-    .dolphin {
-        display:none;
+
+}
+@media only screen and (max-width: 990px){
+    .navbar-collapse{
+        margin: 35vh 0vh 0vh 5vh;
     }
 }
 @media only screen and (max-width: 800px){
@@ -308,6 +310,13 @@ footer{
 }
 
 @media only screen and (max-width: 600px){
+    .title{
+        background-color: #ddf3f5;
+        height: 10vh;
+        padding-left: 25vh;
+        padding-top: 0vh;
+        font-family: 'Dancing Script', cursive;
+    }
     .start_base {
         padding-top: 7vh;
     }
@@ -351,9 +360,6 @@ footer{
         padding-right: 5vh !important;
         padding-left: 5vh !important;
     }
-    .end-text{
-        padding-top: 0vh;
-    }
 }
 
 
@@ -384,6 +390,9 @@ footer{
         float:none;
     }
 }
+
+
+
 
 
 
