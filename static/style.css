@@ -1,0 +1,79 @@
+body {
+  padding: 20px;
+  color: #aa8976;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: larger;
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+
+.profile_img{
+    border-radius: 50%;
+}
+
+table {
+  width: 100%;
+}
+
+.frame {
+  width: 220px;
+  position: absolute;
+  height: 260px;
+  top: 42px;
+  right: 28px;
+  z-index: -1;
+  background: whitesmoke;
+  border-width: thick;
+  border: outset;
+}
+
+.title {
+  font-family: 'Sriracha', cursive;
+}
+
+.second_table {
+    background-image: linear-gradient(to top, #ffecd2 0%, #fcb69f 100%);
+}
+
+.third_table {
+    background-image: linear-gradient(to bottom, #ffecd2 0%, #fcb69f 100%);
+}
+
+.greeting {
+  color: white;
+  font-family: 'Sriracha', cursive;
+  text-align: center;
+  font-size: xxl;
+  padding-top: 5%;
+}
+
+form {
+   margin-left: 15vh;
+   margin-right: 15vh;
+}
+
+.btn-primary {
+  margin-left: 90%;
+}
+
+.hr {
+  display: block;
+  margin-top: 2.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  color: #f0e2d0;
+  border-top: none;
+  border-style: groove;
+  border-width: 1px;
+  width: 40%;
+
+@media only screen and (max-width: 500px), screen and (min-width: 0px){
+    .second_table {
+      background-color: #BADA55 !important;
+    }
+
+    .third_table {
+      background-color: #BADA55 !important;
+    }
+
+}
